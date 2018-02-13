@@ -1,0 +1,19 @@
+//MOLECULES
+//.........NAV
+//
+
+.nav{
+  background: transparent;
+}
+
+.mobile-menu__container{
+  background: $color-background;
+  @media(max-width: map-get($breakpoints, small)){
+    box-shadow: 1px 0 7px #8080807d;
+  }
+
+}
+.mobile-menu__icon-container{
+  box-shadow: inset 3px 0px 3px #0000000d;
+  background: $color-background;
+}

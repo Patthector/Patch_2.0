@@ -1,0 +1,10 @@
+//LAYOUT
+//.......MENU
+//
+
+.menu-mobile{
+  @include reset-list;
+  @include flexy(column nowrap,flex-start);
+  width: 90%;
+  margin:20px;
+}

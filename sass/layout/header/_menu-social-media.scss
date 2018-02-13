@@ -1,0 +1,26 @@
+//LAYOUT
+//......MENU-SOCIAL-MEDIA
+//
+
+.menu-social-media{
+  width: 100%;
+  @include flexy(row nowrap,flex-start);
+  @include reset-list;
+  @include reset-content(0,0,0,0,20px,0,20px,20%);
+  li{
+    margin-right: 12px;
+    a{
+      font-size: rem(13,12);
+      padding: 3px 6px;
+      border:1px solid white;
+      border-radius: 3px;
+      @include mq(map-get($breakpoints, xlarge)){
+        font-size: rem(14,12);
+      }
+      &:hover{
+        background-color:yellow;
+        border-color:yellow;
+      }
+    }
+  }
+}

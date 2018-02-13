@@ -1,0 +1,42 @@
+//ATOMS
+//.....HEADER__SEARCH-BAR--BOTTON-EXIT
+//
+
+@import "compass/css3/user-interface";
+
+.header__search-bar__button-exit{
+  border: none;
+  display: block;
+  margin-left: auto;
+  background:$color-terciary;
+  color:$color_primary;
+  font-size: rem(24,$base-font-size);
+  font-family: $font-family-heading;
+}
+.form__input{
+  border: none;
+  width: 100%;
+  display: inline-block;
+  font-family: $font-family-heading;
+  font-size: rem(48,$base-font-size);
+  font-weight: $font-weight-light;
+  @include input-placeholder{
+    color:$black;
+    font-weight: $font-weight-extra-bold;
+  }
+  &::placeholder{
+    color:$black;
+    font-weight: $font-weight-extra-bold;
+  }
+}
+.form{
+  margin:auto 1em;
+  margin-right: 36px;
+}
+.form__input-search-label{
+  display: inline-block;
+  color:$color-text;
+  font-family: $font-family-default;
+  letter-spacing: .1px;
+  font-size:rem(11,$base-font-size);
+}

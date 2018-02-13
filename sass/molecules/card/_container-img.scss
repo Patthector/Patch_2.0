@@ -1,0 +1,47 @@
+//LAYOUT
+//........CONTAINER-IMG
+//
+
+.container-img{
+  width:100%;
+  position: relative;
+  text-align: center;
+  &--right{
+    width: 45%;
+    float: right;
+    margin-left: 10px;
+  }
+  &--left{
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.card__span--opaque{
+  position: absolute;
+  top:0;
+  left:0;
+  background: $color-primary;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size:rem(18,12);
+    font-family:$font-family-heading;
+    letter-spacing: 1px;
+    @include mq(map-get($breakpoints, xlarge)){
+      font-size:rem(22,12);
+    }
+  }
+  transition: all 1s ease;
+}

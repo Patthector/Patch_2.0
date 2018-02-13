@@ -1,0 +1,88 @@
+//ATOMS
+//.....FOOTER__LIST__ITEMS
+//
+
+
+@import "compass/css3/border-radius";
+
+.footer__list__items{
+  order:0;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  @include mq(map-get($breakpoints, xsmall)){
+    width: 33%;
+  }
+  & a{
+    color:rgba($color-terciary,.8);
+    font-size:rem(10,12);
+    font-family: $font-family-default;
+  }
+  &--arrow {
+    display: block;
+    width:100%;
+    align-self: center;
+    text-align: center;
+    order:-1;
+    margin-bottom:6px;
+    a{
+      color:$color-terciary;
+      font-size: rem(12,12);
+      border:1px solid $color-secondary;
+      @include border-radius(100%);
+      padding: 3px 8px 6px;
+
+    }
+    @include mq(map-get($breakpoints, xsmall)){
+      order:0;
+      width: 33%;
+      margin: 0;
+    }
+  }
+  &--primary{
+    text-align: left;
+    a{
+      font-style: normal;
+      display: inline-block;
+      width: 100%;
+      i{
+        color:$color-terciary;
+        font-size: rem(11,12);
+        font-weight: $font-weight-bold;
+        font-style: normal;
+        font-family:$font-family-heading;
+        letter-spacing: .3px;
+      }
+    }
+  }
+  &--social{
+    align-self: flex-end;
+  }
+  .menu-social-media{
+    @include flexy(row wrap,flex-end);
+    margin: 0;
+    padding: 0;
+    @include mq(map-get($breakpoints, xsmall)){
+      @include flexy(row nowrap);
+    }
+  }
+  .social-media-menu__item{
+    text-align: right;
+    @include mq(map-get($breakpoints, xsmall)){
+      padding: 1%;
+      margin: 0 0 0 12px;
+      width: auto
+    }
+    a{
+      color:rgb(247, 247, 62);
+      margin: 0;
+      padding: 0;
+      border:0;
+      font-size: rem(13,12);
+      &:hover{
+        color:$color-terciary;
+        background: transparent;
+      }
+    }
+  }
+}

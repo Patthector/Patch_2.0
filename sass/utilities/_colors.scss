@@ -1,0 +1,70 @@
+// Color Palette
+// examples based on the official Sass styleguide
+
+//
+//MINE
+//====
+//PALETTE OF COLORS
+$palette : (
+  "scale-of-greys" : (
+            "white"                 : #FFFFFF,
+            "Alabaster"             :darken(#ffffff,3.5%),
+            "Mercury"               :darken(#ffffff,10%),
+            "Silver"                :darken(#ffffff,20%),
+            "Nobel"                 :darken(#ffffff,30%),
+            "Dusty Gray"            :darken(#ffffff,40%),
+            "grey"                  :darken(#ffffff,50%),
+            "Dove Gray"             :darken(#ffffff,60%),
+            "Tundora"               :darken(#ffffff,70%),
+            "Mine Shaft"            :darken(#ffffff,80%),
+            "Cod Grey"              :darken(#ffffff,90%),
+            "Almost Black"          :darken(#ffffff,95%),
+            "black"                 : #000000,
+  ),
+);
+// descriptive colors
+// =============
+
+$white:                     #fff;
+$yellow:                    rgb(255,255,0);
+$black:                     #000;
+// Common colors
+//============
+$color-background:          $white;
+$color-background-shade:    getColor("scale-of-greys","Silver");
+$color-text:                getColor("scale-of-greys","Dove Gray");
+$color-text-weak:           getColor("scale-of-greys","Nobel");
+$color-text-strong:         getColor("scale-of-greys","Cod Grey");
+$color-text-heading:        getColor("scale-of-greys","Almost Black");
+$color-text-invert:         rgba($color-background, .75);
+$color-text-strong-invert:  $color-background;
+
+// main color palette
+// =============
+$color-primary:             $black;
+$color-secondary:           $yellow;
+$color-terciary:            $white;
+$color-shadow:              rgba($black, .125);
+$color-note:                #666;
+
+// Links
+$color-link:                $color-primary;
+$color-link-hover:          $color-secondary;
+$color-link-visited:        $yellow;
+
+//Icons
+//====
+$color-icon:                $color-text;
+$color-icon-hover:          $color-text-strong;
+$color-icon-visited:        $color-text-weak;
+
+
+// Selections
+$color-selection:           #b3d4fc;
+
+// Messages
+$color-message:             #f4ecbb;
+$color-success:             #2cde2c;
+$color-warning:             #cf8600;
+$color-important:           #d00;
+$color-notice:              #66b;

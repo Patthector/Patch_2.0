@@ -1,0 +1,12 @@
+//LAYOUT
+//......CARD--WIDER-IMG-LAYOUT
+//
+
+
+.card__post--wider-img-layout{
+  width: 100%;
+  @include mq(map-get($breakpoints, large)){
+    width: 106%;
+    margin-left: -3%;
+  }
+}

@@ -1,0 +1,11 @@
+//LAYOUT
+//.........SUBMENU
+//
+.submenu{
+  margin:10px 0 0 10px;
+  padding: 0;
+  z-index:8001;
+  @media(min-width:map-get($breakpoints, small)+1px){
+    display: none;
+  }
+}

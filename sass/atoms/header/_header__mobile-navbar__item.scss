@@ -1,0 +1,45 @@
+//ATOMS
+//.....HEADER__NAV-FOR-MOBILES__ITEMS
+//
+
+.header__mobile-navbar__item{
+  flex:1 15%;
+  font-size:rem(18,$base-font-size);
+  align-self: center;
+  &--left{
+    text-align: left;
+    position: relative;
+    left:0px;
+    transition: all .5s ease;
+  }
+  &--right{
+    text-align:right;
+  }
+}
+.icon-logo{
+  display: block;
+  width: 70%;
+}
+.logo{
+  display: block;
+  transform: translateY(-100px);
+  font-family: $font-family-heading;
+  color:$color-primary;
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-extra-bold;
+  text-align: center;
+  span{
+    position: relative;
+    &:after{
+      content:"";
+      display: block;
+      position: absolute;
+      top: 70%;
+      right:-8px;
+      border: 3px solid $color-secondary;
+      width: 0px;
+    }
+  }
+
+}

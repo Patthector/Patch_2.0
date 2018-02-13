@@ -1,0 +1,25 @@
+//STATE
+//.........CARD--HOVER
+//
+
+.card--hover:hover{
+  @include mq(map-get($breakpoints, large)){
+    div.card__metainfo{
+      visibility: visible;
+      position: absolute;
+      top:-20px;
+      opacity: 1;
+      @include transition(all,.7s,ease);
+    }
+    & article{
+      position: absolute;
+      top: 35px;
+      left: 0;
+      @include transition(all,.6s,ease){};
+      div .card__span--opaque{
+        opacity: .7;
+        @include transition(all,1s,ease);
+      }
+    }
+  }
+}

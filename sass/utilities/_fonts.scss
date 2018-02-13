@@ -1,0 +1,60 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+//
+@if variable-exists(google-fonts-url) {
+  @import url($google-fonts-url);
+}
+
+@if variable-exists(typefaces) {
+  @each $file, $option in $typefaces {
+    @font-face {
+      font-family: map-get(map-get($typefaces, $file), family);
+      font-style: map-get(map-get($typefaces, $file), style);
+      font-weight: map-get(map-get($typefaces, $file), weight);
+      src: url('../fonts/#{$file}.ttf') format('truetype'),
+           url('../fonts/#{$file}.woff') format('woff'),
+           url('../fonts/#{$file}.woff2') format('woff2');
+    }
+  }
+}
+
+//
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff'),
+       url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 600;
+  src: url('../fonts/oswald-semibold-webfont.ttf') format('truetype'),
+       url('../fonts/oswald-semibold-webfont.woff') format('woff'),
+       url('../fonts/oswald-semibold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 200;
+  src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype'),
+       url('../fonts/oswald-extralight-webfont.woff') format('woff'),
+       url('../fonts/oswald-extralight-webfont.woff2') format('woff2');
+}
+//
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf') format('truetype'),
+       url('../fonts/oswald-regular-webfont.woff') format('woff'),
+       url('../fonts/oswald-regular-webfont.woff2') format('woff2');
+}
+//
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  src: url('../fonts/Oswald-Heavy.ttf') format('truetype'),
+       url('../fonts/oswald-heavy-webfont.woff') format('woff'),
+       url('../fonts/oswald-heavy-webfont.woff2') format('woff2');
+}

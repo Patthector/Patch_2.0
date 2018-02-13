@@ -1,0 +1,14 @@
+//LAYOUT
+//.......NAV__MOBILE-MENU
+//
+@media(max-width:map-get($breakpoints, medium)-1px){
+  .nav__mobile-menu{
+    display: none;
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    min-height: 100vh;
+    z-index:8000;
+  }
+}

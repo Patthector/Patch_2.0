@@ -1,0 +1,30 @@
+//LAYOUT
+//......CARD__METAINFO__LIST
+//
+
+
+.card__metainfo{
+  display: block;
+  width: 100%;
+  @media(min-width:map-get($breakpoints, large)){//large-breakpoint
+    position: absolute;
+    opacity: 0;
+    top:0;
+    transition: all 1s ease;
+  }
+  &__list{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding-left: 0;
+      &--to-the-right{
+        justify-content: flex-start;
+      }
+      &--to-the-left{
+        flex-direction:row-reverse;
+        justify-content: flex-start;
+      }
+  }
+}

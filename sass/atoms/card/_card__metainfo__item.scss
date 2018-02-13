@@ -1,0 +1,34 @@
+//ATOMS
+//......CARD__METAINFO__ITEM
+//
+
+.card__metainfo__item{
+  font-family: $font-family-heading;
+  font-size: rem(9,12);
+  @include mq(map-get($breakpoints, small)){
+    font-size: rem(10,12);
+  }
+  @include mq(map-get($breakpoints, xlarge)){
+    font-size: rem(12,12);
+  }
+  text-transform: uppercase;
+  padding: 3px;
+  font-weight: $font-weight-light;
+  &--background{
+    background: $color-secondary;
+    font-weight: $font-weight-extra-bold;
+  }
+  &--span{
+    text-transform: none;
+  }
+  &--date{
+    color:$color-text-weak;
+    font-weight: $font-weight-reg;
+  }
+  &--to-the-left{
+    margin-right: 11.5%;
+  }
+  &--to-the-right{
+    margin-left: 11.5%;
+  }
+}

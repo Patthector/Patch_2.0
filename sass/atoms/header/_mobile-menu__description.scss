@@ -1,0 +1,21 @@
+//ATOMS
+//.....MOBILE-MENU__DESCRIPTION
+//
+
+.mobile-menu__description{
+  display: inline-block;
+  min-width: 200px;
+  width: 200px;
+  max-width: 350px;
+  font-size: 11px;
+  color: rgba(black,.7);
+  text-align: center;
+  margin: 24px 5px 5px 5px;
+  i{
+    text-decoration: underline;
+    color: black;
+  }
+  @include mq(map-get($breakpoints, medium)){
+    display: none;
+  }
+}

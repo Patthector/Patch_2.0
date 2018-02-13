@@ -1,0 +1,35 @@
+//ATOMS
+//.....HEADER__MAIN-HEADING
+//
+.main-heading{
+  display: none;
+  width: 100%;
+  font-family: $font-family-heading;
+  font-size:rem(48,$base-font-size);
+  color:$black;
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-extra-bold;
+  text-align: center;
+  @include mq(map-get($breakpoints, medium)){
+    font-size:rem(56,$base-font-size);
+    text-align: left;
+    display: block;
+  }
+  @include mq(map-get($breakpoints, xlarge)){
+    font-size: rem(72,$base-font-size);
+  }
+  span{
+    display: inline-block;
+    position: relative;
+    &:after{
+      content:"";
+      display: block;
+      position: absolute;
+      top: 75%;
+      right:-12px;
+      border: 5px solid yellow;
+      width: 0px;
+    }
+  }
+}

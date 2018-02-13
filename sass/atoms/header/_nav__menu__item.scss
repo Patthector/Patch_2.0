@@ -1,0 +1,20 @@
+//ATOMS
+//.....NAV__MENU__ITEMS
+//
+
+.nav__menu__item{
+  margin: 0;
+  padding-bottom: 4px;
+
+  &:hover>.submenu {
+    @include mq(map-get($breakpoints, medium)){
+      display: block;
+      position: fixed;
+      background-color: white;
+      box-shadow: 0 0 10px $color-background-shade;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 4px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+//ORGANISMS
+//.........FLEX-MAIN
+//
+@import "compass/css3/flexbox";
+
+.ui-loader h1,
+.ui-corner-all h1,
+.ui-body-a h1,
+.ui-loader-default h1{
+  display: none;
+}
+body{
+  margin: 0;
+}
+.flex-main{
+  @include flexy(column nowrap,center);
+  @include mq(map-get($breakpoints, xsmall)){//480px
+    width: 100%;
+  }
+  @include mq(map-get($breakpoints, xsmall)+20px){//480px
+    width: 90%;
+    padding: 0 5%;
+  }
+  @include mq(map-get($breakpoints, xsmall)+100px){//580px
+    width: 80%;
+    padding: 0 10%;
+  }
+  @include mq(map-get($breakpoints, small)){//660px
+    width: 70%;
+    padding: 0 15%;
+  }
+}

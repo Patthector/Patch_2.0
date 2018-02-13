@@ -1,0 +1,15 @@
+//ATOMS
+//.....CARD__IMG-TO-THE-RIGHT-LAYOUT
+//
+
+.card__post--img-to-the-right-layout{
+  width: 95%;
+  margin:0 2.5%;
+  @include mq(map-get($breakpoints, large)){
+    width: 105%;
+    margin-right: 0;
+    display: block;
+    z-index: 6000;
+  }
+
+}

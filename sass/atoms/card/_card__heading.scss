@@ -1,0 +1,88 @@
+//ATOMS
+//.....CARD__HEADING
+//
+
+/**
+*This is the behaivor of all the headings in different environments(layouts)
+*taking always care of the behaivor of the overlaping post and avoiding
+*compromise content. That's the reason for the margins approach
+*/
+
+.card__heading{
+  color:$color-primary;//black
+  font-family:$font-family-heading;//oswald
+  text-transform: uppercase;
+  padding:6px 0;
+  margin: 0;
+  margin-left: 6.5%;
+  margin-right:6.5%;
+  font-size:rem(20,12);
+  @include mq(map-get($breakpoints, large)){
+    font-size: rem(22,12);
+  }
+  @include mq(map-get($breakpoints, xlarge)){
+    font-size: rem(26,12);
+  }
+  font-weight: $font-weight-light;//200
+
+  &--img-background-layout{
+    padding: 0;
+    color:$color-terciary;//white
+  }
+  &--quote-layout{
+    color:$color-terciary;
+    background: $color-primary;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 6px;
+    text-align: center;
+  }
+  &--wider-layout{
+    margin-left:10.5%;
+    margin-right:10.5%;
+  }
+  &--large-layout{
+    margin-left:0;
+    margin-right:0;
+  }
+  &--bold{
+    font-weight: $font-weight-reg;
+    font-size: rem(18,12);
+    @include mq(map-get($breakpoints, large)){
+      font-size: rem(20,12);
+    }
+    @include mq(map-get($breakpoints, xlarge)){
+      font-size: rem(26,12);
+    }
+  }
+  &--bolder{
+    font-weight: 700;
+    font-size: rem(14,12);
+    @include mq(map-get($breakpoints, large)){
+      font-size: rem(16,12);
+    }
+    @include mq(map-get($breakpoints, xlarge)){
+      font-size: rem(24,12);
+    }
+  }
+  &--to-the-right{
+    text-align: right;
+    font-size: rem(14,12);
+    @include mq(map-get($breakpoints, large)){
+      font-size: rem(16,12);
+    }
+    @include mq(map-get($breakpoints, xlarge)){
+      font-size: rem(22,12);
+    }
+  }
+  &--to-the-left{
+    text-align: left;
+    font-size: rem(14,12);
+    @include mq(map-get($breakpoints, large)){
+      font-size: rem(16,12);
+    }
+    @include mq(map-get($breakpoints, xlarge)){
+      font-size: rem(22,12);
+    }
+  }
+}

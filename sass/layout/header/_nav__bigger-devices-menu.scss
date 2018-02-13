@@ -1,0 +1,9 @@
+//LAYOUT
+//......NAV__BIGGER-DEVICES-MENU
+//
+
+.nav__bigger-devices-menu{
+  @media(min-width:map-get($breakpoints, medium)){
+    display: block;
+  }
+}

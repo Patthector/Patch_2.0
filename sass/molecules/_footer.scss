@@ -1,0 +1,26 @@
+//MOLECULES
+//.........FOOTER.SCSS
+//
+
+.footer{
+  background: $color-primary;
+  &__list{
+    padding: 12px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq(map-get($breakpoints,small)){
+      .menu-social-media{
+        @include flexy(row wrap,flex-end);
+      }
+      padding: 12px 24px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+}

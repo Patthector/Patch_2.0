@@ -1,0 +1,29 @@
+//ORGANISMS
+//.........GRID
+//
+
+.grid{
+  @include mq(map-get($breakpoints, medium)){
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(45%,1fr));
+
+    grid-auto-rows: minmax(10px,auto);
+    -ms-grid-flow: dense;
+    grid-auto-flow: dense;
+    width: 94%;
+    padding: 20px 3%;
+    -ms-grid-column-gap: 1% 1%;
+    grid-column-gap: 1%;
+  }
+
+  @include mq(map-get($breakpoints, large)){
+      -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+  }
+  @include mq(map-get($breakpoints, xlarge)){
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(22%,1fr));
+  }
+}

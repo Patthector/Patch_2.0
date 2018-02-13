@@ -1,0 +1,17 @@
+//ORGANISMS
+//.........HEADER
+//
+
+header{
+  top: 0;
+  left: 0;
+  width:100%;
+  position: fixed;
+  @include flexy(column nowrap,center);
+  z-index: 8000;
+  @include mq(map-get($breakpoints,medium )){
+    position: relative;
+    margin-bottom: 20px;
+    margin-top:60px;
+  }
+}

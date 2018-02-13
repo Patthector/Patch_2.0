@@ -1,0 +1,13 @@
+//LAYOUT
+//......HEADER__NAV-FOR-MOBILES--LAYOUT
+//
+
+@import "compass/css3/box-shadow";
+
+.header__mobile-navbar{
+  background: $color-background;
+  //BOX-SHADOW
+  //box-shadow: 0 1px 3px $color-background-shade;
+  @include single-box-shadow(0px, 2px, 2px, 0px, $color-background-shade);
+
+}
